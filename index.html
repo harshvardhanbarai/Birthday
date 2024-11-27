@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Bestie!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('IMG-20241008-WA0012.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .card {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      color: #feca57;
+      animation: bounceIn 1.5s infinite alternate;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      line-height: 1.5;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    .card button {
+      background-color: #feca57;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #ff9f43;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin: 20px 0;
+      animation: float 3s infinite alternate;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounceIn {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    .falling-confetti {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      background: #feca57;
+      border-radius: 50%;
+      animation: confetti-fall 4s linear infinite, confetti-drift 4s ease-in-out infinite;
+    }
+
+    .falling-confetti:nth-child(odd) {
+      background: #ff9f43;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-100vh);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+    @keyframes confetti-drift {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-20px);
+      }
+      100% {
+        transform: translateX(20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Falling Confetti -->
+  <div class="falling-confetti" style="animation-delay: 0s;"></div>
+  <div class="falling-confetti" style="animation-delay: 1s; left: 60%;"></div>
+  <div class="falling-confetti" style="animation-delay: 1.5s; left: 40%;"></div>
+  <div class="falling-confetti" style="animation-delay: 2s; left: 30%;"></div>
+  <div class="falling-confetti" style="animation-delay: 2.5s; left: 70%;"></div>
+
+  <div class="card">
+    <div class="emoji">🎉🎂💖</div>
+    <h1>Happiest Birthday Dobu... </h1>
+    <p>
+      चाँद सी दोस्ती, रोशनी हर रात में करती है, <br>
+      तेरे जैसा दोस्त, हर दुआ में जगह करती है। <br>
+      तू मेरी जिंदगी की वो रोशनी है, <br>
+      जो हर अंधेरे में उजाला करती है।💕
+    </p>
+    <p>Let’s make memories today that we’ll cherish forever. 🥳</p>
+    <button onclick="alert('Heyyy!!! Its my Dobu\'s birthday,\nMany many happy returns of the day dobu, njoy ur day as well as ni8, On this day in 2003 khbr nahti k mari dobu no birth thase ne in 2019 i found uhh as my bff, thankyou for always being there in my ups and downs, sorry for all the neusense i created this year but i swear to be with uhh in ur each and every situation. Thanks for being my bestfriend, i know u deserve more than i give but i will always give uhh the best of mine... Once again Happiest birthday meri pyaari Dobu...\nYours only Chomu Best Friend...\nMiss uhh bou bdhu dobu... 🥺🥺🥺\nLove uhh so much... ❣❣❣ 🎉')">Send Love 💌</button>
+  </div>
+</body>
+</html>
